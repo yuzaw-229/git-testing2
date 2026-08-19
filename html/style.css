@@ -1,0 +1,93 @@
+span {
+  color: blue;
+}
+.txt {
+  color: rgb(218, 220, 218);
+}
+
+#text {
+  color: greenyellow;
+}
+
+h1 {
+  /* background-color: green; */
+}
+
+.hello {
+  font-size: 20px;
+}
+
+/* background-image */
+.bg-img {
+  background-color: aqua;
+  background-image: url("./assets/images/large-photo/p2.jpg");
+  height: 300px;
+  width: 300px;
+  /* background-repeat:repeat-y; */
+  background-size: contain;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  /* border : 1px solid green; */
+  /* border-width,border-style , border-color */
+  border-width: 4px;
+  /* border-style : solid;
+   */
+  border-style: solid;
+  border-color: blue;
+  /* margin */
+  /* margin: 20px; all  */
+  /* margin: 20px 30px; y,x */
+  /* margin: 30px 40px 50px 60px; top, right, bottom, left*/
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  margin-right: 20px;
+
+  /* padding */
+  /* padding:50px 20px 30px 40px;
+ */
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 10px;
+
+  box-sizing: border-box;
+}
+
+#text-format {
+  color: rgb(65, 73, 69);
+  background-color: aquamarine;
+  text-align: right;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  background-color: black;
+}
+
+.bby-boss {
+  /* vertical-align:middle; */
+  /* vertical-align: sub; */
+  vertical-align:top
+}
+
+.text-dec{
+  text-decoration: overline;
+  text-transform: capitalize;
+}
+a{
+  text-decoration: none;
+}
+
+p{
+  text-transform: capitalize;
+  /* word-spacing: 30px; */
+  /* letter-spacing: 30px; */
+  /* line-height: 50px; */
+  text-indent: 40%;
+  direction:rtl;
+}

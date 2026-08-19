@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #fff;
+        color: #222;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        padding: 0 38px;
+        background: #9b3838;
+      }
+      .logo {
+        font-size: 2rem;
+        color: #000;
+      }
+      .nav-list {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+      }
+      .nav-list a {
+        text-decoration: none;
+        color: #000;
+      }
+      .nav-icons {
+        display: flex;
+        gap: 1rem;
+      }
+      .nav-icons span {
+        font-size: 1.2rem;
+      }
+      .hero {
+        height: 300px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        background: url("./assets/images/large-photo/p2.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .hero-content {
+        position: absolute;
+        left: 22px;
+        bottom: 25px;
+      }
+      .category-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 13px;
+        width: 90%;
+        margin: 0 auto;
+      }
+      .category-card {
+        height: 145px;
+        position: relative;
+        overflow: hidden;
+        background: #e9e9e6;
+      }
+      .category-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .category-card:hover img {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+      }
+      .category-name {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        color: #000;
+      }
+      .bottom-text {
+        text-align: center;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <div class="logo">N</div>
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-icons">
+          <span class="search">search</span>
+          <span class="bag">bag</span>
+          <span class="user">user</span>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Own your look<br />
+            Own your moment
+          </h1>
+          <p class="hero-text">
+            A collection of timeless classics, handpicked by our experts.
+          </p>
+        </div>
+      </section>
+
+      <section class="categories">
+        <div class="categories-section-heading">
+          <h2>Shop by category</h2>
+          <p>
+            Explore our collections and find the perfect pieces for every
+            moment.
+          </p>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=500&q=80"
+              alt="Shirts"
+            />
+            <span class="category-name">Shirts</span>
+          </article>
+          <article class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=500&q=80"
+              alt="Shirts"
+            />
+            <span class="category-name">Shirts</span>
+          </article>
+          <article class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=500&q=80"
+              alt="Shirts"
+            />
+            <span class="category-name">Shirts</span>
+          </article>
+          <article class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=500&q=80"
+              alt="Shirts"
+            />
+            <span class="category-name">Shirts</span>
+          </article>
+          <article class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=500&q=80"
+              alt="Shirts"
+            />
+            <span class="category-name">Shirts</span>
+          </article>
+        </div>
+        <div class="bottom-text">
+          <p class="">
+            A collection of timeless classics, handpicked by our experts.
+          </p>
+          <a href="">View all categories →</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

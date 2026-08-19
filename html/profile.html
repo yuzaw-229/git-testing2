@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Simple Profile Card</title>
+
+    <!-- Connect CSS File -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <style>
+    /* ==========================
+   Body Styling
+========================== */
+
+    body {
+      background-color: #e6f2ff;
+      font-family: Arial, sans-serif;
+    }
+
+    /* ==========================
+   ID Selector
+========================== */
+
+    #profile-card {
+      width: 300px;
+
+      background-color: white;
+
+      border: 3px solid navy;
+
+      border-radius: 10px;
+
+      padding: 20px;
+
+      margin: 50px auto;
+
+      text-align: center;
+    }
+
+    /* ==========================
+   Class Selector
+========================== */
+
+    .name {
+      color: navy;
+
+      font-size: 28px;
+
+      text-transform: uppercase;
+    }
+
+    /* Span Styling */
+
+    .last-name {
+      color: crimson;
+    }
+
+    /* Job */
+
+    .job {
+      color: green;
+
+      font-weight: bold;
+
+      font-size: 20px;
+    }
+
+    /* About */
+
+    .about {
+      color: #555;
+
+      font-style: italic;
+    }
+
+    /* Email */
+
+    .email {
+      color: blue;
+
+      font-weight: bold;
+    }
+
+    /* Link */
+
+    a {
+      display: inline-block;
+
+      margin-top: 15px;
+
+      padding: 10px 18px;
+
+      background-color: royalblue;
+
+      color: white;
+
+      text-decoration: none;
+
+      border-radius: 5px;
+    }
+
+    /* Hover Effect */
+
+    a:hover {
+      background-color: darkblue;
+    }
+  </style>
+
+  <body>
+    <!-- Profile Card -->
+    <div id="profile-card">
+      <!-- Name -->
+      <h2 class="name">John <span class="last-name">Smith</span></h2>
+
+      <!-- Job Title -->
+      <p class="job">Frontend Developer</p>
+
+      <!-- Description -->
+      <p class="about">I enjoy creating beautiful and responsive websites.</p>
+
+      <!-- Email -->
+      <p>
+        Email:
+        <span class="email"> john@gmail.com </span>
+      </p>
+
+      <!-- Website Link -->
+      <a href="https://www.google.com" target="_blank"> Visit Portfolio </a>
+    </div>
+  </body>
+</html>

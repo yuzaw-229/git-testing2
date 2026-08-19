@@ -1,0 +1,392 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike Running Shoe</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* =========================
+         RESET
+      ========================= */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* =========================
+         BODY
+      ========================= */
+
+      body {
+        /* min-height: 100vh; */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 30px;
+        margin: 40px;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        background: linear-gradient(135deg, #eeeaff, #ddd6ff);
+      }
+
+      /* =========================
+         PRODUCT CARD
+      ========================= */
+
+      .product-card {
+        /* margin:100px; */
+        width: 525px;
+
+        background-color: #ffffff;
+
+        border-radius: 20px;
+
+        overflow: hidden;
+
+        box-shadow: 0 20px 35px rgba(50, 40, 80, 0.18);
+      }
+
+      /* =========================
+         PRODUCT IMAGE
+      ========================= */
+
+      .product-image {
+        height: 390px;
+
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: linear-gradient(135deg, #5f5a72, #9185c7);
+
+        overflow: hidden;
+      }
+
+      /* Shoe Image */
+
+      .product-image img {
+        width: 80%;
+        max-height: 300px;
+
+        object-fit: contain;
+
+        display: block;
+      }
+
+      /* =========================
+         FAVORITE BUTTON
+      ========================= */
+
+      .favorite-btn {
+        position: absolute;
+
+        top: 22px;
+        right: 22px;
+
+        width: 56px;
+        height: 56px;
+
+        border: none;
+        border-radius: 50%;
+
+        background-color: rgba(112, 98, 180, 0.9);
+
+        color: white;
+
+        font-size: 36px;
+        font-weight: 300;
+
+        line-height: 1;
+
+        cursor: pointer;
+
+        transition: 0.3s ease;
+      }
+
+      .favorite-btn:hover {
+        background-color: #6655a5;
+
+        transform: scale(1.08);
+      }
+
+      /* =========================
+         PRODUCT INFORMATION
+      ========================= */
+
+      .product-info {
+        padding: 24px 23px 22px;
+      }
+
+      /* Product Title */
+
+      .product-info h1 {
+        margin-bottom: 10px;
+
+        color: #292929;
+
+        font-size: 31px;
+        font-weight: 700;
+      }
+
+      /* =========================
+         TAGS
+      ========================= */
+
+      .product-tags {
+        display: flex;
+        gap: 10px;
+
+        margin-bottom: 25px;
+      }
+
+      .product-tags span {
+        display: inline-block;
+
+        padding: 6px 9px;
+
+        border: 2px solid #aaa;
+
+        border-radius: 5px;
+
+        color: #444;
+
+        font-size: 16px;
+        letter-spacing: 1px;
+
+        background-color: #fff;
+      }
+
+      /* =========================
+         DESCRIPTION
+      ========================= */
+
+      .description {
+        max-width: 470px;
+
+        margin-bottom: 35px;
+
+        color: #444;
+
+        font-size: 20px;
+
+        line-height: 1.8;
+      }
+
+      /* =========================
+         BOTTOM SECTION
+      ========================= */
+
+      .product-bottom {
+        display: flex;
+
+        align-items: flex-end;
+
+        justify-content: space-between;
+
+        gap: 20px;
+      }
+
+      /* =========================
+         PRICE
+      ========================= */
+
+      .price {
+        display: flex;
+        flex-direction: column;
+
+        gap: 3px;
+      }
+
+      .price span {
+        color: #333;
+
+        font-size: 14px;
+
+        font-weight: 700;
+
+        letter-spacing: 2px;
+      }
+
+      .price strong {
+        color: #222;
+
+        font-size: 30px;
+
+        font-weight: 700;
+      }
+
+      /* =========================
+         ADD TO CART BUTTON
+      ========================= */
+
+      .cart-btn {
+        flex: 1;
+
+        height: 58px;
+
+        max-width: 295px;
+
+        border: none;
+
+        border-radius: 11px;
+
+        background-color: #66559f;
+
+        color: white;
+
+        font-size: 20px;
+
+        font-weight: 700;
+
+        cursor: pointer;
+
+        transition: 0.3s ease;
+      }
+
+      .cart-btn:hover {
+        background-color: #514184;
+
+        transform: translateY(-2px);
+
+        box-shadow: 0 8px 15px rgba(80, 60, 130, 0.25);
+      }
+
+      .cart-btn:active {
+        transform: translateY(0);
+      }
+
+      /* =========================
+         RESPONSIVE DESIGN
+      ========================= */
+
+      @media (max-width: 600px) {
+        body {
+          padding: 15px;
+        }
+
+        .product-card {
+          width: 100%;
+          max-width: 525px;
+        }
+
+        .product-image {
+          height: 320px;
+        }
+
+        .product-image img {
+          width: 85%;
+        }
+
+        .product-info h1 {
+          font-size: 26px;
+        }
+
+        .description {
+          font-size: 17px;
+          line-height: 1.6;
+        }
+        .product-bottom {
+          align-items: stretch;
+        }
+
+        .price strong {
+          font-size: 25px;
+        }
+
+        .cart-btn {
+          height: 52px;
+
+          font-size: 17px;
+        }
+      }
+
+      @media (max-width: 430px) {
+        .product-image {
+          height: 280px;
+        }
+
+        .favorite-btn {
+          width: 48px;
+          height: 48px;
+
+          top: 15px;
+          right: 15px;
+
+          font-size: 30px;
+        }
+
+        .product-info {
+          padding: 20px 18px;
+        }
+
+        .product-info h1 {
+          font-size: 23px;
+        }
+
+        .product-tags span {
+          font-size: 13px;
+        }
+
+        .description {
+          font-size: 16px;
+          margin-bottom: 25px;
+        }
+
+        .product-bottom {
+          flex-direction: column;
+        }
+
+        .cart-btn {
+          width: 100%;
+          max-width: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="product-card">
+      <!-- Product Image Section -->
+      <section class="product-image">
+        <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+
+        <img src="./assets/images/png/pattern-2.png" alt="Nike Running Shoe" />
+      </section>
+
+      <!-- Product Information -->
+      <section class="product-info">
+        <h1>Nike Running Shoe</h1>
+
+        <div class="product-tags">
+          <span>EU38</span>
+          <span>BLACK/WHITE</span>
+        </div>
+
+        <p class="description">
+          Crossing hardwood comfort with off-court flair. '80s-inspired
+          construction, bold details and nothin'-but-net style.
+        </p>
+
+        <!-- Bottom Section -->
+        <div class="product-bottom">
+          <div class="price">
+            <span>PRICE</span>
+            <strong>$69.99</strong>
+          </div>
+
+          <button class="cart-btn">Add to cart</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

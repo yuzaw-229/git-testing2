@@ -1,0 +1,51 @@
+live server
+material icon theme
+open in browser 
+auto rename tag
+auto import 
+auto close tag
+code spell checker
+prettier
+intelliSense for CSS class name in HTML 
+
+
+! / html:5
+ctrl + / => comment
+alt + up arrow
+ctrl + enter 
+ctrl + D 
+
+lorem 
+lorem*5
+lorem5
+auto save
+
+abbr 
+strong / em 
+span 
+sub / sup
+hr
+blockquote
+
+li*3
+ul>li*3
+li{apple} => <li>apple</li>
+
+CSS 
+
+inline css
+style=""
+
+internal css
+external css
+
+
+basic selectors => tag / element selectors / id selectors // class selectors
+
+Group Selector => Apply the same styles to multiple selectors.
+ Descendant Selector (space) div p => Selects elements inside another element // Select every <p> inside a <div>.
+Child Selector (>) => Only selects direct children
+Adjacent Sibling Selector (+) => Selects the next sibling only.
+General Sibling Selector (~) => Selects all siblings after an element.
+
+position => relative,absolute,sticky, fixed ,

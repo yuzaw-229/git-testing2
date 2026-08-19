@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Profile Card</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* ==================================
+   Body
+================================== */
+
+      body {
+        margin: 0;
+
+        font-family: Arial, sans-serif;
+
+        background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600");
+
+        background-size: cover;
+
+        background-repeat: no-repeat;
+
+        background-position: center;
+      }
+
+      /* ==================================
+   Card (ID Selector)
+================================== */
+
+      #card {
+        width: 400px;
+
+        background: rgba(255, 255, 255, 0.95);
+
+        margin: 40px auto;
+
+        border: 3px solid navy;
+
+        border-radius: 20px;
+
+        overflow: hidden;
+
+        text-align: center;
+
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+      }
+
+      /* ==================================
+   Cover Image
+================================== */
+
+      .cover {
+        height: 160px;
+
+        background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200");
+
+        background-size: cover;
+
+        background-position: center;
+      }
+
+      /* ==================================
+   Profile Photo
+================================== */
+
+      .profile-photo {
+        width: 140px;
+
+        height: 140px;
+
+        border-radius: 50%;
+
+        border: 5px solid white;
+
+        margin-top: -70px;
+      }
+
+      /* ==================================
+   Headings
+================================== */
+
+      h1 {
+        color: navy;
+      }
+
+      .lastname {
+        color: crimson;
+      }
+
+      .job {
+        color: green;
+      }
+
+      /* ==================================
+   About
+================================== */
+
+      .about {
+        color: #555;
+
+        padding: 0 20px;
+
+        line-height: 25px;
+      }
+
+      /* ==================================
+   Text Color
+================================== */
+
+      .blue {
+        color: royalblue;
+
+        font-weight: bold;
+      }
+
+      /* ==================================
+   Skills
+================================== */
+
+      ul {
+        text-align: left;
+
+        width: 220px;
+
+        margin: auto;
+      }
+
+      /* ==================================
+   Badge
+================================== */
+
+      .badge {
+        display: inline-block;
+        /* padding: 8px 15px; */
+        /* border:1px solid #ccc; */
+        height: 30px;
+        line-height: 30px;
+
+        background: orange;
+
+        color: white;
+
+        padding: 8px 15px;
+
+        margin: 5px;
+
+        border-radius: 5px;
+      }
+      .badge:hover {
+        background: darkorange;
+        cursor: pointer;
+        box-shadow: 7px 10px 25px rgba(190, 218, 99, 0.3);
+      }
+
+      /* ==================================
+   Links
+================================== */
+
+      a {
+        display: inline-block;
+
+        text-decoration: none;
+
+        background: royalblue;
+
+        color: white;
+
+        padding: 10px 18px;
+
+        margin: 5px;
+
+        border-radius: 5px;
+      }
+
+      /* Hover Selector */
+
+      a:hover {
+        background: darkblue;
+      }
+
+      /* ==================================
+   Button
+================================== */
+
+      button {
+        background: crimson;
+
+        color: white;
+
+        border: none;
+
+        padding: 12px 25px;
+
+        margin: 20px;
+
+        border-radius: 8px;
+
+        cursor: pointer;
+      }
+
+      /* Hover */
+
+      button:hover {
+        background: darkred;
+      }
+
+      /* ==================================
+   Horizontal Line
+================================== */
+
+      hr {
+        width: 85%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ================= Profile Card ================= -->
+
+    <div id="card">
+      <!-- Cover Photo -->
+      <div class="cover"></div>
+
+      <!-- Profile Photo -->
+      <img
+        class="profile-photo"
+        src="https://randomuser.me/api/portraits/women/65.jpg"
+        alt="Student Photo"
+      />
+
+      <!-- Student Name -->
+      <h1>
+        Hla
+        <span class="lastname">Hla
+            
+        </span>
+      </h1>
+
+      <!-- Job -->
+      <h3 class="job">Frontend Web Developer</h3>
+
+      <hr />
+
+      <!-- About -->
+      <h2>About Me</h2>
+
+      <p class="about">
+        I am passionate about creating beautiful and responsive websites using
+        HTML, CSS and JavaScript.
+      </p>
+
+      <hr />
+
+      <!-- Personal Information -->
+
+      <h2>Personal Information</h2>
+
+      <p><strong>Age :</strong> <span class="blue">21 Years</span></p>
+
+      <p><strong>Gender :</strong> Female</p>
+
+      <p>
+        <strong>Email :</strong>
+        <span class="blue">emma@gmail.com</span>
+      </p>
+
+      <p>
+        <strong>Phone :</strong>
+        <span class="blue">+95 9123456789</span>
+      </p>
+
+      <p>
+        <strong>Location :</strong>
+        Yangon, Myanmar
+      </p>
+
+      <hr />
+
+      <!-- Skills -->
+
+      <h2>Skills</h2>
+
+      <ul>
+        <li>HTML5</li>
+
+        <li>CSS3</li>
+
+        <li>JavaScript</li>
+
+        <li>Bootstrap</li>
+
+        <li>Responsive Design</li>
+      </ul>
+
+      <hr />
+
+      <!-- Hobbies -->
+
+      <h2>Hobbies</h2>
+
+      <!-- <p> -->
+        <span class="badge">Reading</span>
+
+        <span class="badge">Travel</span>
+
+        <span class="badge">Coding</span>
+
+        <span class="badge">Photography</span>
+      <!-- </p> -->
+
+      <hr />
+
+      <!-- Social Links -->
+
+      <h2>Social Media</h2>
+
+      <a href="https://github.com" target="_blank">GitHub</a>
+
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+
+      <br /><br />
+
+      <!-- Button -->
+
+      <button>Contact Me</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NZ+Guides&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css");
+:root {
+  --primary-color: #00ffcc;
+  --secondary-color: #0026ff;
+  /* --tertiary-color: #0000ff; */
+  --main-font: "Playfair Display", serif;
+}
+.paragraph {
+  /* font-family: "Playfair Display", serif; */
+  /* font-family: "Playwrite NZ Guides", cursive; */
+  /* font-family: "Dancing Script", cursive; */
+  font-size: 10px;
+  font-weight: bold;
+  font-style: italic;
+  /* text-align: center */
+  /* color:lightblue; */
+  /* color:#50cbcb; */
+  /* RGB */
+  /* color:rgb(78, 45, 25); */
+  /* color: rgba(red, green, blue, alpha); */
+  /* color:rgba(118, 216, 13, 0.2) */
+  /* color:hsl(196, 100%, 24%) */
+  color: var(--primary-color);
+}
+
+a:link {
+  color: red;
+  text-decoration: none;
+}
+a:hover {
+  color: green;
+  text-decoration: underline;
+}
+/* a:visited {
+  color: blue;
+  text-decoration: none;
+} */
+a:active {
+  color: yellow;
+  text-decoration: none;
+}
+/* display : none/inline/block/inline-block */
+#box-shadow {
+  /* border: 2px solid blue; */
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  /* offset-x, offset-y, blur-radius, spread-radius, color */
+  /* box-shadow: 20px 10px 7px 2px blue; */
+  box-shadow:
+    rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px,
+    rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px,
+    rgba(240, 46, 170, 0.05) -25px 25px;
+}
+.text-shadow {
+  text-shadow: 5px 7px 5px red;
+}
+
+.outline-btn {
+  border: 2px solid rgb(45, 107, 232);
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.outline-btn:hover {
+  background-color: rgb(45, 107, 232);
+  color: white;
+  cursor: pointer;
+}
+
+.solid-btn {
+  /* border: 2px solid rgb(45, 107, 232); */
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(45, 107, 232);
+  color: white;
+  cursor: pointer;
+}
+
+.solid-btn:hover {
+  background-color: rgb(6, 54, 149);
+}
+
+.add-btn {
+  padding: 7px 15px;
+  border-radius: 50px;
+}
+.icon {
+  margin-right: 10px;
+}
+
+.layout {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr;
+
+  grid-template-areas:
+    "header header header"
+    "menu sidebar sidebar"
+    "main main sidebar"
+    "footer footer footer";
+
+  gap: 10px;
+}
+
+.box {
+  width: 200px;
+  height: 150px;
+}
+
+.box1 {
+  float: left;
+  background: skyblue;
+}
+
+.box2 {
+  /* float: left; */
+  background: pink;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  height: 150px;
+  background: lightgray;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.left {
+  float: left;
+  width: 30%;
+}
+
+.right {
+  float: right;
+  width: 30%;
+}
+
+.footer {
+  clear: both;
+  background: black;
+  color: white;
+}
+
+.article {
+    width: 700px;
+    border: 2px solid gray;
+    padding: 20px;
+}
+
+.coffee {
+    float: left;
+    width: 180px;
+    margin-right: 20px;
+}
+
+.footer {
+    clear: both;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}

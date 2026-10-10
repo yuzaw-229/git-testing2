@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Bean Boutique Coffee Shop - specialty coffee, brewing equipment and coffee events.">
+
+    <title>Bean Boutique | Specialty Coffee</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- First Visit Discount Popup -->
+    <div class="popup-overlay" id="welcomePopup">
+        <div class="popup-box">
+            <button class="popup-close" id="closePopup" aria-label="Close popup">
+                &times;
+            </button>
+
+            <span class="popup-label">WELCOME TO BEAN BOUTIQUE</span>
+
+            <h2>Enjoy 10% Off Your First Order</h2>
+
+            <p>
+                Join the Bean Boutique community and receive a first-order
+                discount by signing up with your email.
+            </p>
+
+            <form id="discountForm">
+                <label for="discountEmail">Email Address</label>
+
+                <input
+                    type="email"
+                    id="discountEmail"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <button type="submit" class="dark-button">
+                    Get My Discount
+                </button>
+            </form>
+
+            <p class="popup-message" id="popupMessage"></p>
+        </div>
+    </div>
+
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <div class="top-bar">
+            <p>Specialty coffee • Carefully roasted • Made for coffee lovers</p>
+        </div>
+
+        <nav class="navbar">
+
+            <a href="homepage.html" class="logo">
+                <span class="logo-mark">B</span>
+
+                <span class="logo-text">
+                    <strong>BEAN</strong>
+                    <small>BOUTIQUE</small>
+                </span>
+            </a>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li>
+                    <a href="homepage.html" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="coffee.html">Coffee</a>
+                </li>
+
+                <li>
+                    <a href="origin.html">Single Origin</a>
+                </li>
+
+                <li>
+                    <a href="equipment.html">Equipment</a>
+                </li>
+
+                <li>
+                    <a href="events.html">Events</a>
+                </li>
+
+                <li>
+                    <a href="cart.html">Cart</a>
+                </li>
+
+                <li>
+                    <a href="offers.html">Offers</a>
+                </li>
+
+                <li>
+                    <a href="subscription.html">Subscription</a>
+                </li>
+            </ul>
+
+            <a href="coffee.html" class="nav-button">
+                Shop Coffee
+            </a>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Hero / Slideshow -->
+        <section class="hero">
+
+            <div class="hero-slide slide-one active-slide">
+                <div class="hero-content">
+
+                    <p class="eyebrow">
+                        SPECIALTY COFFEE • EST. 2026
+                    </p>
+
+                    <h1>
+                        Good Coffee.<br>
+                        <span>Good Moments.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Discover carefully selected coffee blends, beautiful
+                        brewing equipment and experiences created for people
+                        who love great coffee.
+                    </p>
+<div class="hero-buttons">
+                        <a href="coffee.html" class="primary-button">
+                            Explore Coffee
+                        </a>
+
+                        <a href="events.html" class="outline-button">
+                            View Events
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="hero-slide slide-two">
+                <div class="hero-content">
+
+                    <p class="eyebrow">
+                        BREW IT YOUR WAY
+                    </p>
+
+                    <h2>
+                        Better Brewing<br>
+                        <span>Starts Here.</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        From classic French presses to modern brewing tools,
+                        find equipment that fits your everyday coffee ritual.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="equipment.html" class="primary-button">
+                            Explore Equipment
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="hero-slide slide-three">
+                <div class="hero-content">
+
+                    <p class="eyebrow">
+                        COFFEE COMMUNITY
+                    </p>
+
+                    <h2>
+                        Taste. Learn.<br>
+                        <span>Connect.</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        Join coffee tastings, brewing workshops and meet-the-
+                        roaster events at Bean Boutique.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="events.html" class="primary-button">
+                            Discover Events
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Slideshow Controls -->
+            <button
+                class="slider-arrow slider-prev"
+                id="prevSlide"
+                aria-label="Previous slide"
+            >
+                &#10094;
+            </button>
+
+            <button
+                class="slider-arrow slider-next"
+                id="nextSlide"
+                aria-label="Next slide"
+            >
+                &#10095;
+            </button>
+
+
+            <div class="slider-dots">
+
+                <button
+                    class="slider-dot active-dot"
+                    data-slide="0"
+                    aria-label="Show slide 1"
+                ></button>
+
+                <button
+                    class="slider-dot"
+                    data-slide="1"
+                    aria-label="Show slide 2"
+                ></button>
+
+                <button
+                    class="slider-dot"
+                    data-slide="2"
+                    aria-label="Show slide 3"
+                ></button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quick Introduction -->
+        <section class="intro-section section">
+
+            <div class="section-heading">
+                <p class="eyebrow">THE BEAN BOUTIQUE EXPERIENCE</p>
+
+                <h2>
+                    Coffee made for<br>
+                    <em>everyday rituals.</em>
+                </h2>
+            </div>
+
+            <div class="intro-text">
+                <p>
+                    Bean Boutique brings together distinctive coffee,
+                    thoughtful equipment and a welcoming coffee community.
+                </p>
+
+                <a href="coffee.html" class="text-link">
+                    Discover our coffee →
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- Feature Cards -->
+        <section class="feature-section section">
+
+            <div class="section-title-row">
+
+                <div>
+                    <p class="eyebrow">EXPLORE</p>
+                    
+<h2>Something for every coffee lover</h2>
+                </div>
+
+                <a href="coffee.html" class="text-link">
+                    View all →
+                </a>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <article class="feature-card coffee-card">
+
+                    <div class="card-image">
+                        <img
+                            src="images/coffee-beans.jpg"
+                            alt="Freshly roasted coffee beans"
+                        >
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-number">01</span>
+
+                        <h3>Specialty Coffee</h3>
+
+                        <p>
+                            Explore unique blends and single-origin coffees
+                            with individual tasting notes.
+                        </p>
+
+                        <a href="coffee.html" class="card-link">
+                            Explore coffee →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="feature-card equipment-card">
+
+                    <div class="card-image">
+                        <img
+                            src="images/brewing-equipment.jpg"
+                            alt="Coffee brewing equipment"
+                        >
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-number">02</span>
+
+                        <h3>Brewing Equipment</h3>
+
+                        <p>
+                            Find practical brewing tools designed to make
+                            better coffee at home.
+                        </p>
+
+                        <a href="equipment.html" class="card-link">
+                            View equipment →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="feature-card events-card">
+
+                    <div class="card-image">
+                        <img
+                            src="images/coffee-event.jpg"
+                            alt="People enjoying a coffee tasting event"
+                        >
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-number">03</span>
+
+                        <h3>Events & Workshops</h3>
+
+                        <p>
+                            Taste, learn and meet other coffee lovers through
+                            our upcoming events.
+                        </p>
+
+                        <a href="events.html" class="card-link">
+                            See events →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Promotional Section -->
+        <section class="promo-section section">
+
+            <div class="promo-image">
+                <img
+                    src="images/coffee-cup.jpg"
+                    alt="Fresh coffee served in a ceramic cup"
+                >
+            </div>
+
+            <div class="promo-content">
+
+                <p class="eyebrow">THIS MONTH AT BEAN BOUTIQUE</p>
+
+                <h2>
+                    Make your coffee<br>
+                    <em>moment count.</em>
+                </h2>
+
+                <p>
+                    Discover new coffees, learn better brewing techniques and
+                    become part of a growing coffee community.
+                </p>
+
+                <a href="offers.html" class="primary-button">
+                    See Special Offers
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Three Reasons -->
+        <section class="values-section section">
+
+            <div class="section-heading centered">
+
+                <p class="eyebrow">WHY BEAN BOUTIQUE</p>
+
+                <h2>
+                    More than just<br>
+                    <em>a cup of coffee.</em>
+                </h2>
+
+            </div>
+<div class="values-grid">
+
+                <article class="value-box">
+
+                    <div class="value-icon">01</div>
+
+                    <h3>Distinctive Coffee</h3>
+
+                    <p>
+                        Carefully selected blends and single-origin coffees
+                        with clear tasting information.
+                    </p>
+
+                </article>
+
+
+                <article class="value-box">
+
+                    <div class="value-icon">02</div>
+
+                    <h3>Better Brewing</h3>
+
+                    <p>
+                        Helpful equipment information and brewing guidance
+                        for different coffee styles.
+                    </p>
+
+                </article>
+
+
+                <article class="value-box">
+
+                    <div class="value-icon">03</div>
+
+                    <h3>Real Community</h3>
+
+                    <p>
+                        Coffee tasting sessions and workshops designed to
+                        bring coffee lovers together.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Interactive Map Widget / Plugin -->
+        <section class="location-section section">
+
+            <div class="location-content">
+
+                <p class="eyebrow">COME VISIT</p>
+
+                <h2>
+                    Find your way<br>
+                    to Bean Boutique.
+                </h2>
+
+                <p>
+                    Visit the shop, explore our coffee selection and join the
+                    Bean Boutique community.
+                </p>
+
+                <a href="events.html" class="text-link">
+                    Check upcoming events →
+                </a>
+
+            </div>
+
+
+            <div class="map-widget">
+
+                <iframe
+                    src="https://www.google.com/maps?q=coffee%20shop&output=embed"
+                    title="Bean Boutique location map"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="homepage.html" class="footer-logo">
+                    BEAN BOUTIQUE
+                </a>
+
+                <p>
+                    Specialty coffee, thoughtful brewing and a community
+                    built around good coffee.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Explore</h3>
+
+                <a href="coffee.html">Coffee Selection</a>
+                <a href="origin.html">Single Origin</a>
+                <a href="equipment.html">Brewing Equipment</a>
+                <a href="events.html">Events & Workshops</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Shop</h3>
+
+                <a href="cart.html">Shopping Cart</a>
+                <a href="offers.html">Special Offers</a>
+                <a href="subscription.html">Subscriptions</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Stay Connected</h3>
+
+                <p>
+                    Follow Bean Boutique for new coffees, events and
+                    community updates.
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="Instagram">
+                        Instagram
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        Facebook
+                    </a>
+
+                    <a href="#" aria-label="TikTok">
+                        TikTok
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Bean Boutique Coffee Shop. All rights reserved.
+            </p>
+
+            <p>
+                Crafted for coffee lovers.
+            </p>
+
+        </div>
+</footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
